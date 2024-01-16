@@ -1,18 +1,5 @@
-import React from "react";
 import Avatar from "../Avatar/Avatar";
-
-type ChipData = {
-  id: number;
-  name: string;
-  avatar: string;
-  email: string;
-};
-
-type DropdownModalProps = {
-  items: ChipData[];
-  inputValue: string;
-  onItemClick: (item: ChipData) => void;
-};
+import DropdownModalProps from "../../types/DropdownModalProps";
 
 const DropdownModal: React.FC<DropdownModalProps> = ({
   items,
@@ -20,7 +7,7 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
   onItemClick,
 }) => {
   return (
-    <div className="absolute top-[50px] left-0 bg-white rounded-lg shadow-2xl z-[1] overflow-y-auto scrollbar max-h-[300px] max-sm:w-60">
+    <div className="absolute top-[50px] left-0 bg-white rounded-lg shadow-2xl z-[1] overflow-y-auto scrollbar max-h-[300px] max-sm:w-60 max-sm:overflow-x-hidden">
       {items
         .filter((item) =>
           item.name.toLowerCase().includes(inputValue.toLowerCase())

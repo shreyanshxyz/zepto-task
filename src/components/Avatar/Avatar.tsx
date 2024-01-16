@@ -1,10 +1,4 @@
-import React from "react";
-
-type AvatarProps = {
-  avatarUrl: string;
-  altText: string;
-};
-
+import AvatarProps from "../../types/AvatarProps";
 const Avatar: React.FC<AvatarProps> = ({ avatarUrl, altText }) => {
   return (
     <img

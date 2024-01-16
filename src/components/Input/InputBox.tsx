@@ -1,13 +1,5 @@
-import React, { ReactNode, useEffect, useRef } from "react";
-
-type InputBoxProps = {
-  value: string;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  onClick: () => void;
-  onKeyDown: (event: React.KeyboardEvent<HTMLInputElement>) => void;
-  children?: ReactNode;
-};
-
+import { useEffect, useRef } from "react";
+import InputBoxProps from "../../types/InputBoxProps";
 const InputBox: React.FC<InputBoxProps> = ({
   value,
   onChange,

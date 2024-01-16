@@ -1,18 +1,5 @@
-import React from "react";
 import Avatar from "../Avatar/Avatar";
-
-type ChipData = {
-  id: number;
-  name: string;
-  avatar: string;
-  email: string;
-};
-
-type ChipProps = {
-  item: ChipData;
-  highlightedChip: ChipData | null | undefined;
-  onRemove: () => void;
-};
+import ChipProps from "../../types/ChipProps";
 
 const Chip: React.FC<ChipProps> = ({ item, onRemove, highlightedChip }) => {
   return (
