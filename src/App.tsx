@@ -2,13 +2,7 @@ import { KeyboardEvent, useState } from "react";
 import InputBox from "./components/Input/InputBox";
 import DropdownModal from "./components/Modal/DropdownModal";
 import Chip from "./components/Chip/Chip";
-
-type ChipData = {
-  id: number;
-  name: string;
-  avatar: string;
-  email: string;
-};
+import ChipData from "./types/ChipData";
 
 function App() {
   const [items, setItems] = useState<ChipData[]>([
