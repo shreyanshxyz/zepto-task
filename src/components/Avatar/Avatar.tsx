@@ -1,14 +1,13 @@
 import React from "react";
 
-type AvatarProps = {};
+type AvatarProps = {
+  avatarUrl: string;
+  altText: string;
+};
 
-const Avatar: React.FC<AvatarProps> = () => {
+const Avatar: React.FC<AvatarProps> = ({ avatarUrl, altText }) => {
   return (
-    <img
-      className="w-10 h-10 rounded-full"
-      src="https://www.w3schools.com/howto/img_avatar2.png"
-      alt="demo avatar"
-    />
+    <img className="w-10 h-10 rounded-full" src={avatarUrl} alt={altText} />
   );
 };
 export default Avatar;
