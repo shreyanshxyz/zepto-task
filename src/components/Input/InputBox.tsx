@@ -22,7 +22,7 @@ const InputBox: React.FC<InputBoxProps> = ({
   return (
     <div className="relative">
       <input
-        className="p-2 text-lg mb-1 outline-none "
+        className="p-2 text-lg mb-1 outline-none"
         type="text"
         onChange={onChange}
         onClick={onClick}
