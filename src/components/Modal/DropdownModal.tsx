@@ -20,7 +20,7 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
   onItemClick,
 }) => {
   return (
-    <div className="absolute top-[50px] left-0 bg-white rounded-lg shadow-2xl z-[1] overflow-y-auto scrollbar max-h-[300px]">
+    <div className="absolute top-[50px] left-0 bg-white rounded-lg shadow-2xl z-[1] overflow-y-auto scrollbar max-h-[300px] max-sm:w-60">
       {items
         .filter((item) =>
           item.name.toLowerCase().includes(inputValue.toLowerCase())
@@ -28,14 +28,14 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
         .map((item) => (
           <div
             key={item.id}
-            className="cursor-pointer p-3 flex justify-between gap-4 items-center hover:bg-[#f0f0f0] min-w-[450px]"
+            className="cursor-pointer p-3 flex justify-start gap-4 items-center hover:bg-[#f0f0f0] min-w-[450px] max-sm:w-60"
             onClick={() => onItemClick(item)}
           >
-            <div className="flex items-center gap-4">
-              <Avatar avatarUrl={item.avatar} altText={item.name} />
+            <Avatar avatarUrl={item.avatar} altText={item.name} />
+            <div className="flex items-center justify-center gap-4 max-sm:flex-col max-sm:items-start max-sm:p-0 max-sm:text-sm max-sm:gap-1">
               <span className="font-bold"> {item.name}</span>
+              <p className="">{item.email}</p>
             </div>
-            <p className="mr-4">{item.email}</p>
           </div>
         ))}
     </div>
