@@ -20,9 +20,9 @@ const InputBox: React.FC<InputBoxProps> = ({
     inputRef.current?.focus();
   }, []);
   return (
-    <div>
+    <div className="relative">
       <input
-        className="text-sm p-3 pt-10 border-blue-800 border-b-[3px] min-w-[800px] outline-none"
+        className="p-2 text-lg mb-1 outline-none "
         type="text"
         onChange={onChange}
         onClick={onClick}
@@ -31,6 +31,7 @@ const InputBox: React.FC<InputBoxProps> = ({
         ref={inputRef}
         placeholder="Add new user..."
       />
+      {children}
     </div>
   );
 };
