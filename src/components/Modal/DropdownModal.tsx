@@ -32,7 +32,7 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
             onClick={() => onItemClick(item)}
           >
             <Avatar avatarUrl={item.avatar} altText={item.name} />
-            <div className="flex items-center justify-center gap-4 max-sm:flex-col max-sm:items-start max-sm:p-0 max-sm:text-sm max-sm:gap-1">
+            <div className="flex items-center justify-center gap-4 max-sm:flex-col max-sm:items-start max-sm:p-0 max-sm:text-sm max-sm:gap-0">
               <span className="font-bold"> {item.name}</span>
               <p className="">{item.email}</p>
             </div>
