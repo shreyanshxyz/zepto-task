@@ -1,6 +1,6 @@
 # Zepto Assignment
 
-##### Live Project Link: www.www.com
+##### Live Project Link: https://zepto-task-nine.vercel.app/
 
 ##### Task:
 
@@ -25,3 +25,36 @@ Design an implement a chip components with the following features:
 <img src="https://pasteimg.com/images/2024/01/16/zepto-mobile-1.png" alt="mobile" width="230"/>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 <img src="https://pasteimg.com/images/2024/01/16/zepto-mobile-2.png" alt="mobile" width="230"/>
+
+##### Installation
+
+Clone the repository
+
+```bash
+git clone git@github.com:shreyanshxyz/zepto-task.git
+cd zepto-task
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+or
+
+```bash
+yarn
+```
+
+Start the project
+
+```bash
+npm start
+```
+
+or
+
+```bash
+yarn run start
+```
