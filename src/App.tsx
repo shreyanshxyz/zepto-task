@@ -122,7 +122,7 @@ function App() {
             key={chip.id}
             item={chip}
             onRemove={() => removeChip(chip)}
-            highlightedItem={highilightChip}
+            highlightedChip={highilightChip}
           />
         ))}
         <InputBox
