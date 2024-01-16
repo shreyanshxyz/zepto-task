@@ -20,7 +20,7 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
   onItemClick,
 }) => {
   return (
-    <div className="absolute top-[50px] left-0 bg-white rounded-lg shadow-2xl z-[1] overflow-y-auto scrollbar max-h-[450px]">
+    <div className="absolute top-[50px] left-0 bg-white rounded-lg shadow-2xl z-[1] overflow-y-auto scrollbar max-h-[300px]">
       {items
         .filter((item) =>
           item.name.toLowerCase().includes(inputValue.toLowerCase())
@@ -33,7 +33,7 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
           >
             <div className="flex items-center gap-4">
               <Avatar avatarUrl={item.avatar} altText={item.name} />
-              <h5> {item.name}</h5>
+              <span className="font-bold"> {item.name}</span>
             </div>
             <p>{item.email}</p>
           </div>
