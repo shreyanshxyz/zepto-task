@@ -28,14 +28,14 @@ const DropdownModal: React.FC<DropdownModalProps> = ({
         .map((item) => (
           <div
             key={item.id}
-            className="cursor-pointer p-3 flex justify-between  gap-4 items-center hover:bg-[#f0f0f0] min-w-[450px]"
+            className="cursor-pointer p-3 flex justify-between gap-4 items-center hover:bg-[#f0f0f0] min-w-[450px]"
             onClick={() => onItemClick(item)}
           >
             <div className="flex items-center gap-4">
               <Avatar avatarUrl={item.avatar} altText={item.name} />
               <span className="font-bold"> {item.name}</span>
             </div>
-            <p>{item.email}</p>
+            <p className="mr-4">{item.email}</p>
           </div>
         ))}
     </div>
