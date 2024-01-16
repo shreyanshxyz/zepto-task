@@ -118,7 +118,7 @@ function App() {
       <h1 className="text-3xl pt-10 pb-10 text-blue-800 font-serif font-bold">
         Pick Users
       </h1>
-      <div className="flex items-center flex-wrap gap-2 border-b-blue-800 border-b-[3px] w-[900px]">
+      <div className="flex items-center flex-wrap gap-2 border-b-blue-800 border-b-[3px] w-[900px] max-sm:w-60">
         {chips.map((chip) => (
           <Chip
             key={chip.id}
